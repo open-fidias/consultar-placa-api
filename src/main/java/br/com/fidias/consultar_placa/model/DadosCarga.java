@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * DadosCarga
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T09:58:41.009-03:00[America/Fortaleza]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T10:44:02.849-03:00[America/Fortaleza]")
 public class DadosCarga {
   public static final String SERIALIZED_NAME_NUMERO_EIXOS = "numero_eixos";
   @SerializedName(SERIALIZED_NAME_NUMERO_EIXOS)

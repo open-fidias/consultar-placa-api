@@ -23,5 +23,6 @@ npx openapi-generator generate \
 cp tmp-build/README.md README.md
 cp tmp-build/docs/*.md docs
 cp -r tmp-build/src/** src
+rm src/main/AndroidManifest.xml
 
 #git apply ApiClient.java.patch
