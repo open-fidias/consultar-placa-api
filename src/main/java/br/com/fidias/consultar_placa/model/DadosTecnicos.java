@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * DadosTecnicos
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T10:48:15.845-03:00[America/Fortaleza]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T16:04:56.863-03:00[America/Fortaleza]")
 public class DadosTecnicos {
   public static final String SERIALIZED_NAME_TIPO_VEICULO = "tipo_veiculo";
   @SerializedName(SERIALIZED_NAME_TIPO_VEICULO)
@@ -72,7 +72,6 @@ public class DadosTecnicos {
   }
 
 
-
   public void setTipoVeiculo(String tipoVeiculo) {
     this.tipoVeiculo = tipoVeiculo;
   }
@@ -94,7 +93,6 @@ public class DadosTecnicos {
   public String getSubSegmento() {
     return subSegmento;
   }
-
 
 
   public void setSubSegmento(String subSegmento) {
@@ -120,7 +118,6 @@ public class DadosTecnicos {
   }
 
 
-
   public void setNumeroMotor(String numeroMotor) {
     this.numeroMotor = numeroMotor;
   }
@@ -142,7 +139,6 @@ public class DadosTecnicos {
   public String getNumeroCaixaCambio() {
     return numeroCaixaCambio;
   }
-
 
 
   public void setNumeroCaixaCambio(String numeroCaixaCambio) {
@@ -168,7 +164,6 @@ public class DadosTecnicos {
   }
 
 
-
   public void setPotencia(String potencia) {
     this.potencia = potencia;
   }
@@ -190,7 +185,6 @@ public class DadosTecnicos {
   public String getCilindradas() {
     return cilindradas;
   }
-
 
 
   public void setCilindradas(String cilindradas) {

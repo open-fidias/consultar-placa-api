@@ -2,7 +2,7 @@
 
 API de Histórico Veicular
 - API version: 1.0.12
-  - Build date: 2025-04-29T10:48:15.845-03:00[America/Fortaleza]
+  - Build date: 2025-04-29T16:04:56.863-03:00[America/Fortaleza]
 
 Consulte o histórico completo de veículos usando apenas a placa com a API do Consultar Placa.
 

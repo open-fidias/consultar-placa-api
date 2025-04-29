@@ -30,7 +30,7 @@ import java.time.OffsetDateTime;
 /**
  * Veiculo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T10:48:15.845-03:00[America/Fortaleza]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T16:04:56.863-03:00[America/Fortaleza]")
 public class Veiculo {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
@@ -71,7 +71,6 @@ public class Veiculo {
   }
 
 
-
   public void setStatus(String status) {
     this.status = status;
   }
@@ -93,7 +92,6 @@ public class Veiculo {
   public String getMensagem() {
     return mensagem;
   }
-
 
 
   public void setMensagem(String mensagem) {
@@ -119,7 +117,6 @@ public class Veiculo {
   }
 
 
-
   public void setDataSolicitacao(OffsetDateTime dataSolicitacao) {
     this.dataSolicitacao = dataSolicitacao;
   }
@@ -143,7 +140,6 @@ public class Veiculo {
   }
 
 
-
   public void setDados(VeiculoDados dados) {
     this.dados = dados;
   }
@@ -165,7 +161,6 @@ public class Veiculo {
   public VeiculoRequest getRequest() {
     return request;
   }
-
 
 
   public void setRequest(VeiculoRequest request) {

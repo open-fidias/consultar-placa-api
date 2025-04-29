@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * DadosCarga
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T10:48:15.845-03:00[America/Fortaleza]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T16:04:56.863-03:00[America/Fortaleza]")
 public class DadosCarga {
   public static final String SERIALIZED_NAME_NUMERO_EIXOS = "numero_eixos";
   @SerializedName(SERIALIZED_NAME_NUMERO_EIXOS)
@@ -60,7 +60,6 @@ public class DadosCarga {
   }
 
 
-
   public void setNumeroEixos(String numeroEixos) {
     this.numeroEixos = numeroEixos;
   }
@@ -84,7 +83,6 @@ public class DadosCarga {
   }
 
 
-
   public void setCapacidadeMaximaTracao(String capacidadeMaximaTracao) {
     this.capacidadeMaximaTracao = capacidadeMaximaTracao;
   }
@@ -106,7 +104,6 @@ public class DadosCarga {
   public String getCapacidadePassageiro() {
     return capacidadePassageiro;
   }
-
 
 
   public void setCapacidadePassageiro(String capacidadePassageiro) {

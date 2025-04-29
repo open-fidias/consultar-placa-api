@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * DadosVeiculo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T10:48:15.845-03:00[America/Fortaleza]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T16:04:56.863-03:00[America/Fortaleza]")
 public class DadosVeiculo {
   public static final String SERIALIZED_NAME_PLACA = "placa";
   @SerializedName(SERIALIZED_NAME_PLACA)
@@ -96,7 +96,6 @@ public class DadosVeiculo {
   }
 
 
-
   public void setPlaca(String placa) {
     this.placa = placa;
   }
@@ -118,7 +117,6 @@ public class DadosVeiculo {
   public String getChassi() {
     return chassi;
   }
-
 
 
   public void setChassi(String chassi) {
@@ -144,7 +142,6 @@ public class DadosVeiculo {
   }
 
 
-
   public void setAnoFabricacao(String anoFabricacao) {
     this.anoFabricacao = anoFabricacao;
   }
@@ -166,7 +163,6 @@ public class DadosVeiculo {
   public String getAnoModelo() {
     return anoModelo;
   }
-
 
 
   public void setAnoModelo(String anoModelo) {
@@ -192,7 +188,6 @@ public class DadosVeiculo {
   }
 
 
-
   public void setMarca(String marca) {
     this.marca = marca;
   }
@@ -214,7 +209,6 @@ public class DadosVeiculo {
   public String getModelo() {
     return modelo;
   }
-
 
 
   public void setModelo(String modelo) {
@@ -240,7 +234,6 @@ public class DadosVeiculo {
   }
 
 
-
   public void setCor(String cor) {
     this.cor = cor;
   }
@@ -262,7 +255,6 @@ public class DadosVeiculo {
   public String getSegmento() {
     return segmento;
   }
-
 
 
   public void setSegmento(String segmento) {
@@ -288,7 +280,6 @@ public class DadosVeiculo {
   }
 
 
-
   public void setCombustivel(String combustivel) {
     this.combustivel = combustivel;
   }
@@ -310,7 +301,6 @@ public class DadosVeiculo {
   public String getProcedencia() {
     return procedencia;
   }
-
 
 
   public void setProcedencia(String procedencia) {
@@ -336,7 +326,6 @@ public class DadosVeiculo {
   }
 
 
-
   public void setMunicipio(String municipio) {
     this.municipio = municipio;
   }
@@ -358,7 +347,6 @@ public class DadosVeiculo {
   public String getUfMunicipio() {
     return ufMunicipio;
   }
-
 
 
   public void setUfMunicipio(String ufMunicipio) {

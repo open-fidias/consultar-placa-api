@@ -18,7 +18,7 @@ import br.com.fidias.consultar_placa.Pair;
 import java.util.Map;
 import java.util.List;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T10:48:15.845-03:00[America/Fortaleza]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T16:04:56.863-03:00[America/Fortaleza]")
 public class ApiKeyAuth implements Authentication {
   private final String location;
   private final String paramName;
@@ -56,7 +56,7 @@ public class ApiKeyAuth implements Authentication {
   }
 
   @Override
-  public void applyToParams(List<Pair> queryParams, Map<String, String> headerParams) {
+  public void applyToParams(List<Pair> queryParams, Map<String, String> headerParams, Map<String, String> cookieParams) {
     if (apiKey == null) {
       return;
     }
@@ -70,6 +70,8 @@ public class ApiKeyAuth implements Authentication {
       queryParams.add(new Pair(paramName, value));
     } else if ("header".equals(location)) {
       headerParams.put(paramName, value);
+    } else if ("cookie".equals(location)) {
+      cookieParams.put(paramName, value);
     }
   }
 }

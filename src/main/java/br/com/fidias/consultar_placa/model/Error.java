@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * Error
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T10:48:15.845-03:00[America/Fortaleza]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T16:04:56.863-03:00[America/Fortaleza]")
 public class Error {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
@@ -65,7 +65,6 @@ public class Error {
   }
 
 
-
   public void setStatus(String status) {
     this.status = status;
   }
@@ -87,7 +86,6 @@ public class Error {
   public String getMensagem() {
     return mensagem;
   }
-
 
 
   public void setMensagem(String mensagem) {
@@ -113,7 +111,6 @@ public class Error {
   }
 
 
-
   public void setTipoDoErro(String tipoDoErro) {
     this.tipoDoErro = tipoDoErro;
   }
@@ -135,7 +132,6 @@ public class Error {
   public VeiculoRequest getRequest() {
     return request;
   }
-
 
 
   public void setRequest(VeiculoRequest request) {

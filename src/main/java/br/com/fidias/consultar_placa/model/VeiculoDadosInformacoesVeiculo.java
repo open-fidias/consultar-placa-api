@@ -30,7 +30,7 @@ import java.io.IOException;
 /**
  * VeiculoDadosInformacoesVeiculo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T10:48:15.845-03:00[America/Fortaleza]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-29T16:04:56.863-03:00[America/Fortaleza]")
 public class VeiculoDadosInformacoesVeiculo {
   public static final String SERIALIZED_NAME_DADOS_VEICULO = "dados_veiculo";
   @SerializedName(SERIALIZED_NAME_DADOS_VEICULO)
@@ -63,7 +63,6 @@ public class VeiculoDadosInformacoesVeiculo {
   }
 
 
-
   public void setDadosVeiculo(DadosVeiculo dadosVeiculo) {
     this.dadosVeiculo = dadosVeiculo;
   }
@@ -87,7 +86,6 @@ public class VeiculoDadosInformacoesVeiculo {
   }
 
 
-
   public void setDadosTecnicos(DadosTecnicos dadosTecnicos) {
     this.dadosTecnicos = dadosTecnicos;
   }
@@ -109,7 +107,6 @@ public class VeiculoDadosInformacoesVeiculo {
   public DadosCarga getDadosCarga() {
     return dadosCarga;
   }
-
 
 
   public void setDadosCarga(DadosCarga dadosCarga) {
