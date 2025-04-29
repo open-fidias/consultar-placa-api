@@ -1,0 +1,156 @@
+openapi: 3.0.4
+info:
+  title: API de Histórico Veicular
+  description: |-
+    Consulte o histórico completo de veículos usando apenas a placa com a API do Consultar Placa.
+  termsOfService: https://www.consultarplaca.com.br/termos-de-uso
+  contact:
+    email: contato@consultarplaca.com.br
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.12
+externalDocs:
+  description: Find out more about Swagger
+  url: https://docs.consultarplaca.com.br/
+servers:
+  - url: https://api.consultarplaca.com.br/v2
+tags:
+  - name: placa
+    description: Consultar Placa - Informações básicas
+    externalDocs:
+      description: Detalhes
+      url: https://docs.consultarplaca.com.br/consultas/consultar-placa
+paths:
+  /consultarPlaca:
+    get:
+      parameters:
+        - name: placa
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Consultar Placa - Informações básicas
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Veiculo'
+        '400':
+          description: Erro de Requisição
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        '403':
+          description: Permissão Negada
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        '429':
+          description: Limite de Requisições Excedido
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        '500':
+          description: Erro Interno
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    Veiculo:
+      type: object
+      properties:
+        status:
+          type: string
+        mensagem:
+          type: string
+        data_solicitacao:
+          type: string
+          format: date-time
+        dados:
+          type: object
+          properties:
+            informacoes_veiculo:
+              type: object
+              properties:
+                dados_veiculo:
+                  $ref: '#/components/schemas/DadosVeiculo'
+                dados_tecnicos:
+                  $ref: '#/components/schemas/DadosTecnicos'
+                dados_carga:
+                  $ref: '#/components/schemas/DadosCarga'
+        request:
+          type: object
+          properties:
+            placa:
+              type: string
+    DadosVeiculo:
+      type: object
+      properties:
+        placa:
+          type: string
+        chassi:
+          type: string
+        ano_fabricacao:
+          type: string
+        ano_modelo:
+          type: string
+        marca:
+          type: string
+        modelo:
+          type: string
+        cor:
+          type: string
+        segmento:
+          type: string
+        combustivel:
+          type: string
+        procedencia:
+          type: string
+        municipio:
+          type: string
+        uf_municipio:
+          type: string
+    DadosTecnicos:
+      type: object
+      properties:
+        tipo_veiculo:
+          type: string
+        sub_segmento:
+          type: string
+        numero_motor:
+          type: string
+        numero_caixa_cambio:
+          type: string
+        potencia:
+          type: string
+        cilindradas:
+          type: string
+    DadosCarga:
+      type: object
+      properties:
+        numero_eixos:
+          type: string
+        capacidade_maxima_tracao:
+          type: string
+        capacidade_passageiro:
+          type: string
+    Error:
+      type: object
+      properties:
+        status:
+          type: string
+        mensagem:
+          type: string
+        tipo_do_erro:
+          type: string
+        request:
+          type: object
+          properties:
+            placa:
+              type: string
