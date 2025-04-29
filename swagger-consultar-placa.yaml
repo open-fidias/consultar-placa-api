@@ -7,11 +7,11 @@ info:
   contact:
     email: contato@consultarplaca.com.br
   license:
-    name: Apache 2.0
-    url: https://www.apache.org/licenses/LICENSE-2.0.html
+    name: MIT
+    url: https://choosealicense.com/licenses/mit/
   version: 1.0.12
 externalDocs:
-  description: Find out more about Swagger
+  description: Documentação
   url: https://docs.consultarplaca.com.br/
 servers:
   - url: https://api.consultarplaca.com.br/v2
