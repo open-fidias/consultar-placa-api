@@ -19,6 +19,7 @@ Method | HTTP request | Description
 import br.com.fidias.consultar_placa.ApiClient;
 import br.com.fidias.consultar_placa.ApiException;
 import br.com.fidias.consultar_placa.Configuration;
+import br.com.fidias.consultar_placa.auth.*;
 import br.com.fidias.consultar_placa.models.*;
 import br.com.fidias.consultar_placa.api.DefaultApi;
 
@@ -26,6 +27,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.consultarplaca.com.br/v2");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     DefaultApi apiInstance = new DefaultApi(defaultClient);
     String placa = "placa_example"; // String | 
@@ -55,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 

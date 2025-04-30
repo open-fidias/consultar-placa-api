@@ -24,6 +24,8 @@ tags:
 paths:
   /consultarPlaca:
     get:
+      security:
+        - basicAuth: []
       parameters:
         - name: placa
           in: query
@@ -61,6 +63,11 @@ paths:
               schema:
                 $ref: "#/components/schemas/Error"
 components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: Use `user` / `passwd` as the test credentials
   schemas:
     Veiculo:
       type: object

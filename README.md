@@ -2,7 +2,7 @@
 
 API de Histórico Veicular
 - API version: 1.0.12
-  - Build date: 2025-04-29T16:04:56.863-03:00[America/Fortaleza]
+  - Build date: 2025-04-30T10:01:03.531-03:00[America/Fortaleza]
 
 Consulte o histórico completo de veículos usando apenas a placa com a API do Consultar Placa.
 
@@ -76,6 +76,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 import br.com.fidias.consultar_placa.ApiClient;
 import br.com.fidias.consultar_placa.ApiException;
 import br.com.fidias.consultar_placa.Configuration;
+import br.com.fidias.consultar_placa.auth.*;
 import br.com.fidias.consultar_placa.models.*;
 import br.com.fidias.consultar_placa.api.DefaultApi;
 
@@ -83,6 +84,11 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.consultarplaca.com.br/v2");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
 
     DefaultApi apiInstance = new DefaultApi(defaultClient);
     String placa = "placa_example"; // String | 
@@ -124,8 +130,11 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Authorization
 
-All endpoints do not require authorization.
 Authentication schemes defined for the API:
+### basicAuth
+
+- **Type**: HTTP basic authentication
+
 
 ## Recommendation
 
