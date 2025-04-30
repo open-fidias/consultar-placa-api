@@ -123,8 +123,7 @@
             "type": "string"
           },
           "data_solicitacao": {
-            "type": "string",
-            "format": "date-time"
+            "type": "string"
           },
           "dados": {
             "type": "object",

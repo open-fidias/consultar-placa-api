@@ -18,7 +18,7 @@ import br.com.fidias.consultar_placa.Pair;
 import java.util.Map;
 import java.util.List;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-30T10:01:03.531-03:00[America/Fortaleza]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-30T10:21:51.050-03:00[America/Fortaleza]")
 public class HttpBearerAuth implements Authentication {
   private final String scheme;
   private String bearerToken;

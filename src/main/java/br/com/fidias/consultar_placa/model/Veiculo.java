@@ -25,12 +25,11 @@ import com.google.gson.stream.JsonWriter;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
-import java.time.OffsetDateTime;
 
 /**
  * Veiculo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-30T10:01:03.531-03:00[America/Fortaleza]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-30T10:21:51.050-03:00[America/Fortaleza]")
 public class Veiculo {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
@@ -42,7 +41,7 @@ public class Veiculo {
 
   public static final String SERIALIZED_NAME_DATA_SOLICITACAO = "data_solicitacao";
   @SerializedName(SERIALIZED_NAME_DATA_SOLICITACAO)
-  private OffsetDateTime dataSolicitacao;
+  private String dataSolicitacao;
 
   public static final String SERIALIZED_NAME_DADOS = "dados";
   @SerializedName(SERIALIZED_NAME_DADOS)
@@ -99,7 +98,7 @@ public class Veiculo {
   }
 
 
-  public Veiculo dataSolicitacao(OffsetDateTime dataSolicitacao) {
+  public Veiculo dataSolicitacao(String dataSolicitacao) {
     
     this.dataSolicitacao = dataSolicitacao;
     return this;
@@ -112,12 +111,12 @@ public class Veiculo {
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public OffsetDateTime getDataSolicitacao() {
+  public String getDataSolicitacao() {
     return dataSolicitacao;
   }
 
 
-  public void setDataSolicitacao(OffsetDateTime dataSolicitacao) {
+  public void setDataSolicitacao(String dataSolicitacao) {
     this.dataSolicitacao = dataSolicitacao;
   }
 

@@ -78,7 +78,6 @@ components:
           type: string
         data_solicitacao:
           type: string
-          format: date-time
         dados:
           type: object
           properties:
